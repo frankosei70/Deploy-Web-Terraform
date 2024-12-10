@@ -47,3 +47,10 @@ variable "vpc_cidr" {
   type        = string
 
   }
+  # security groups variables
+  variable "ssh_location" {
+  default     = "0.0.0.0/0"
+  description = "the IP address that can shh into EC2 instances"
+  type        = string
+
+  }
